@@ -1,0 +1,11 @@
+// Fix-it Lens: base build configuration (committed). Holds no secrets.
+// Optional local override, gitignored: Config/Secrets.xcconfig (see Secrets.example.xcconfig).
+META_MODEL_API_KEY =
+
+// Meta Wearables Device Access Toolkit (Ray-Ban Meta glasses): MWDAT values for Info.plist.
+// Empty is fine for Developer Mode. For release, set them in Secrets.xcconfig (gitignored).
+META_APP_ID =
+CLIENT_TOKEN =
+
+// Local overrides last so they win.
+#include? "Secrets.xcconfig"

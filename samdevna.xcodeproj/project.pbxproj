@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7000053090B00000181610 /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = DA7000023090B00000181610 /* MWDATCore */; };
+		DA7000063090B00000181610 /* MWDATCamera in Frameworks */ = {isa = PBXBuildFile; productRef = DA7000033090B00000181610 /* MWDATCamera */; };
+		DA7000073090B00000181610 /* MWDATMockDevice in Frameworks */ = {isa = PBXBuildFile; productRef = DA7000043090B00000181610 /* MWDATMockDevice */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		338692423090A26100181610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 338692283090A25E00181610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3386922F3090A25E00181610;
+			remoteInfo = samdevna;
+		};
+		3386924C3090A26100181610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 338692283090A25E00181610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3386922F3090A25E00181610;
+			remoteInfo = samdevna;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		338692303090A25E00181610 /* samdevna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samdevna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		338692413090A26100181610 /* samdevnaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = samdevnaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3386924B3090A26100181610 /* samdevnaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = samdevnaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		338692623090A32000181610 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		338692633090A32000181610 /* Secrets.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.example.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		338692513090A26100181610 /* Exceptions for "samdevna" folder in "samdevna" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3386922F3090A25E00181610 /* samdevna */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		338692323090A25E00181610 /* samdevna */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				338692513090A26100181610 /* Exceptions for "samdevna" folder in "samdevna" target */,
+			);
+			path = samdevna;
+			sourceTree = "<group>";
+		};
+		338692443090A26100181610 /* samdevnaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = samdevnaTests;
+			sourceTree = "<group>";
+		};
+		3386924E3090A26100181610 /* samdevnaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = samdevnaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3386922D3090A25E00181610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				DA7000053090B00000181610 /* MWDATCore in Frameworks */,
+				DA7000063090B00000181610 /* MWDATCamera in Frameworks */,
+				DA7000073090B00000181610 /* MWDATMockDevice in Frameworks */,
+			);
+		};
+		3386923E3090A26100181610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		338692483090A26100181610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		338692273090A25E00181610 = {
+			isa = PBXGroup;
+			children = (
+				338692643090A32000181610 /* Config */,
+				338692323090A25E00181610 /* samdevna */,
+				338692443090A26100181610 /* samdevnaTests */,
+				3386924E3090A26100181610 /* samdevnaUITests */,
+				338692313090A25E00181610 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		338692313090A25E00181610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				338692303090A25E00181610 /* samdevna.app */,
+				338692413090A26100181610 /* samdevnaTests.xctest */,
+				3386924B3090A26100181610 /* samdevnaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		338692643090A32000181610 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				338692623090A32000181610 /* App.xcconfig */,
+				338692633090A32000181610 /* Secrets.example.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3386922F3090A25E00181610 /* samdevna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338692523090A26100181610 /* Build configuration list for PBXNativeTarget "samdevna" */;
+			buildPhases = (
+				3386922C3090A25E00181610 /* Sources */,
+				3386922D3090A25E00181610 /* Frameworks */,
+				3386922E3090A25E00181610 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				338692323090A25E00181610 /* samdevna */,
+			);
+			name = samdevna;
+			packageProductDependencies = (
+				DA7000023090B00000181610 /* MWDATCore */,
+				DA7000033090B00000181610 /* MWDATCamera */,
+				DA7000043090B00000181610 /* MWDATMockDevice */,
+			);
+			productName = samdevna;
+			productReference = 338692303090A25E00181610 /* samdevna.app */;
+			productType = "com.apple.product-type.application";
+		};
+		338692403090A26100181610 /* samdevnaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338692573090A26100181610 /* Build configuration list for PBXNativeTarget "samdevnaTests" */;
+			buildPhases = (
+				3386923D3090A26100181610 /* Sources */,
+				3386923E3090A26100181610 /* Frameworks */,
+				3386923F3090A26100181610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				338692433090A26100181610 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				338692443090A26100181610 /* samdevnaTests */,
+			);
+			name = samdevnaTests;
+			productName = samdevnaTests;
+			productReference = 338692413090A26100181610 /* samdevnaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3386924A3090A26100181610 /* samdevnaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3386925A3090A26100181610 /* Build configuration list for PBXNativeTarget "samdevnaUITests" */;
+			buildPhases = (
+				338692473090A26100181610 /* Sources */,
+				338692483090A26100181610 /* Frameworks */,
+				338692493090A26100181610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3386924D3090A26100181610 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3386924E3090A26100181610 /* samdevnaUITests */,
+			);
+			name = samdevnaUITests;
+			productName = samdevnaUITests;
+			productReference = 3386924B3090A26100181610 /* samdevnaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		338692283090A25E00181610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					3386922F3090A25E00181610 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					338692403090A26100181610 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 3386922F3090A25E00181610;
+					};
+					3386924A3090A26100181610 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 3386922F3090A25E00181610;
+					};
+				};
+			};
+			buildConfigurationList = 3386922B3090A25E00181610 /* Build configuration list for PBXProject "samdevna" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 338692273090A25E00181610;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DA7000013090B00000181610 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 338692313090A25E00181610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3386922F3090A25E00181610 /* samdevna */,
+				338692403090A26100181610 /* samdevnaTests */,
+				3386924A3090A26100181610 /* samdevnaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3386922E3090A25E00181610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		3386923F3090A26100181610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		338692493090A26100181610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3386922C3090A25E00181610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		3386923D3090A26100181610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		338692473090A26100181610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		338692433090A26100181610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3386922F3090A25E00181610 /* samdevna */;
+			targetProxy = 338692423090A26100181610 /* PBXContainerItemProxy */;
+		};
+		3386924D3090A26100181610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3386922F3090A25E00181610 /* samdevna */;
+			targetProxy = 3386924C3090A26100181610 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		338692533090A26100181610 /* Debug configuration for PBXNativeTarget "samdevna" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338692623090A32000181610 /* App.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = samdevna/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fix-it Lens";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithik.samdevna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		338692543090A26100181610 /* Release configuration for PBXNativeTarget "samdevna" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338692623090A32000181610 /* App.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = samdevna/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fix-it Lens";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithik.samdevna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		338692553090A26100181610 /* Debug configuration for PBXProject "samdevna" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		338692563090A26100181610 /* Release configuration for PBXProject "samdevna" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		338692583090A26100181610 /* Debug configuration for PBXNativeTarget "samdevnaTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithik.samdevnaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/samdevna.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/samdevna";
+			};
+			name = Debug;
+		};
+		338692593090A26100181610 /* Release configuration for PBXNativeTarget "samdevnaTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithik.samdevnaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/samdevna.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/samdevna";
+			};
+			name = Release;
+		};
+		3386925B3090A26100181610 /* Debug configuration for PBXNativeTarget "samdevnaUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithik.samdevnaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = samdevna;
+			};
+			name = Debug;
+		};
+		3386925C3090A26100181610 /* Release configuration for PBXNativeTarget "samdevnaUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 825A9L79JG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithik.samdevnaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = samdevna;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3386922B3090A25E00181610 /* Build configuration list for PBXProject "samdevna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338692553090A26100181610 /* Debug configuration for PBXProject "samdevna" */,
+				338692563090A26100181610 /* Release configuration for PBXProject "samdevna" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		338692523090A26100181610 /* Build configuration list for PBXNativeTarget "samdevna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338692533090A26100181610 /* Debug configuration for PBXNativeTarget "samdevna" */,
+				338692543090A26100181610 /* Release configuration for PBXNativeTarget "samdevna" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		338692573090A26100181610 /* Build configuration list for PBXNativeTarget "samdevnaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338692583090A26100181610 /* Debug configuration for PBXNativeTarget "samdevnaTests" */,
+				338692593090A26100181610 /* Release configuration for PBXNativeTarget "samdevnaTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3386925A3090A26100181610 /* Build configuration list for PBXNativeTarget "samdevnaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3386925B3090A26100181610 /* Debug configuration for PBXNativeTarget "samdevnaUITests" */,
+				3386925C3090A26100181610 /* Release configuration for PBXNativeTarget "samdevnaUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA7000013090B00000181610 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA7000023090B00000181610 /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7000013090B00000181610 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCore;
+		};
+		DA7000033090B00000181610 /* MWDATCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7000013090B00000181610 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCamera;
+		};
+		DA7000043090B00000181610 /* MWDATMockDevice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7000013090B00000181610 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATMockDevice;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 338692283090A25E00181610 /* Project object */;
+	validationLevel = 1;
+}

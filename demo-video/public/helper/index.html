@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="clock.js"></script>
+<style>*,*::before,*::after{transition:none!important;animation:none!important}</style>
+<script>localStorage.setItem("fixit.name","Sam");localStorage.setItem("fixit.lang","english");</script>
+<script src="config.js"></script><script src="pov.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#06070A" />
+  <title>Fix it together · Fix-it Lens</title>
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="join" class="screen">
+    <div class="brand"><img src="icon.png" alt="" width="44" height="44" /><div><h1>Fix it together</h1><p>Help someone fix it, live, from your browser.</p></div></div>
+    <form id="joinForm" class="card" autocomplete="off">
+      <label>Join code<input id="code" inputmode="text" maxlength="9" placeholder="e.g. K7M2QX" required /></label>
+      <label>Your name<input id="name" maxlength="40" placeholder="Helper" /></label>
+      <label>Your language
+        <select id="lang">
+          <option value="english">English</option><option value="spanish">Español</option><option value="french">Français</option>
+          <option value="portuguese">Português</option><option value="hindi">हिन्दी</option><option value="bengali">বাংলা</option>
+          <option value="tamil">தமிழ்</option><option value="telugu">తెలుగు</option><option value="marathi">मराठी</option>
+          <option value="kannada">ಕನ್ನಡ</option><option value="indonesian">Bahasa Indonesia</option>
+        </select>
+      </label>
+      <button class="primary" type="submit">Join session</button>
+      <button class="ghost" type="button" id="demoBtn">Try the two-device demo (no phone needed)</button>
+    </form>
+    <p class="fine">Tap the live picture to outline a part with <b>SAM 3.1</b> on the Fixer's phone. Hold the mic to talk: <b>Muse Voice Transcribe</b> hears you and <b>Muse Spark</b> translates for them. All Meta model calls run on the Fixer's phone; this page holds no keys.</p>
+  </main>
+
+  <main id="live" class="screen hidden">
+    <header class="bar">
+      <div class="pill" id="linkPill"><span class="dot"></span><span id="linkText">Connecting…</span></div>
+      <div class="pill subtle" id="peerText">—</div>
+      <button class="icon" id="leaveBtn" aria-label="Leave">✕</button>
+    </header>
+    <div id="safety" class="safety hidden"><b>Safety stop</b><span id="safetyText"></span></div>
+    <section class="stage" id="stage">
+      <canvas id="view" aria-label="Live view from the Fixer's camera. Tap a part to outline it."></canvas>
+      <div class="hint" id="hint">Tap a part to outline it for them</div>
+      <div class="model-tag" id="maskTag">sam-3.1</div>
+      <div class="demo-tag hidden" id="demoTag">Demo mode · scripted session</div>
+    </section>
+    <section class="captions" id="captions" aria-live="polite"></section>
+    <section class="memory card hidden" id="memory"><h2>Repair memory <small>muse-spark-1.3</small></h2><ol id="memorySteps"></ol></section>
+    <footer class="controls">
+      <button class="ghost small" id="clearBtn">Clear outline</button>
+      <button class="mic" id="micBtn" aria-label="Hold to talk"><span>Hold to talk</span></button>
+      <button class="ghost small" id="muteBtn">Voice on</button>
+    </footer>
+  </main>
+  
+  
+<script src="app.iife.js"></script>
+<script>
+// Autopilot for the recording: the same taps and hold-to-talk presses a person would make.
+(function(){
+  const at=(s,f)=>setTimeout(f,s*1000);
+  function pt(nx,ny){const c=document.getElementById("view").getBoundingClientRect();const k=Math.min(c.width/504,c.height/896);const w=504*k,h=896*k;return{x:c.left+(c.width-w)/2+nx*w,y:c.top+(c.height-h)/2+ny*h};}
+  function fire(el,type,p){el.dispatchEvent(new PointerEvent(type,{bubbles:true,cancelable:true,clientX:p.x,clientY:p.y,pointerType:"touch",isPrimary:true}));}
+  const mic=()=>document.getElementById("micBtn");const mp=()=>{const b=mic().getBoundingClientRect();return{x:b.left+b.width/2,y:b.top+b.height/2};};
+  at(4.0,()=>fire(document.getElementById("view"),"pointerdown",pt(0.58,0.455)));
+  at(8.6,()=>fire(mic(),"pointerdown",mp()));
+  at(10.2,()=>fire(mic(),"pointerup",mp()));
+  at(13.4,()=>fire(mic(),"pointerdown",mp()));
+  at(14.8,()=>fire(mic(),"pointerup",mp()));
+})();
+</script>
+</body>
+</html>

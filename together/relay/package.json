@@ -1,0 +1,20 @@
+{
+  "name": "fixit-together-relay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Relay for Fix-it Lens 'Fix it together': forwards live frames, taps, masks and captions. No model calls, no keys.",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "dev:cf": "wrangler dev",
+    "deploy:cf": "wrangler deploy"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

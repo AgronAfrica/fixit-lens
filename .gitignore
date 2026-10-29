@@ -1,0 +1,29 @@
+# Secrets: never commit
+Config/Secrets.xcconfig
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.mobileprovision
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcresult
+.swiftpm/
+
+# Script output
+output/
+
+# OS
+.DS_Store
+._*
+__pycache__/
+
+# Node / Remotion
+node_modules/
+.wrangler/
+demo-video/out/

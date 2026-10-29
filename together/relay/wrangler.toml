@@ -1,0 +1,17 @@
+# Cloudflare Workers (free plan). Deploy: npx wrangler login && npx wrangler deploy
+name = "fixit-together"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+
+[assets]
+directory = "../web"
+binding = "ASSETS"
+
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "RoomObject"
+
+# SQLite-backed Durable Objects are available on the Workers free plan.
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RoomObject"]
