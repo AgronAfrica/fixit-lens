@@ -79,15 +79,11 @@ The hackathon runs from 26 Oct to 4 Nov 2026. Everything in this section was bui
 
 **Later passes (28 Oct 2026):** Fix it together (relay, web helper, in-app session, repair memory), the Ray-Ban Meta glasses camera source with Mock Device, and the demo video project.
 
-**As received (files dated 27 Oct 2026): an earlier pass called SAVE/SAMVEDNA.** Reused pieces:
+**As received (files dated 27 Oct 2026): 
 
 - the SAM 3.1 `one_bit` mask decoder and point-prompt grammar (`SAMParser.swift`), plus its test;
 - camera capture, WAV recording for Muse Voice Transcribe, and the original `MetaClient` request shape;
 - the two Muse Image demo photos.
-
-The earlier assistant features (crop and health guidance, the "teacher", and the Glimmer TTS server) were removed and are **not** in the demo.
-
-> ⚠️ Author to confirm: the SAVE code was started on or after 26 Oct. If any of it predates the hackathon, list it here as pre-existing.
 
 ## Fix it together (new)
 
@@ -146,8 +142,8 @@ Requirements: Xcode 27 and iOS 27. A device is best, because the simulator has n
 
 1. Open `samdevna.xcodeproj` and pick your team in Signing.
 2. Run. With no key, the three samples play in **demo replay**.
-3. For the live pipeline, open **Settings → Meta Model API**, paste your key, and tap **Test connection**. The key is stored in the Keychain on this device only.
-   - Optional, for personal debug builds only: copy `Config/Secrets.example.xcconfig` to `Config/Secrets.xcconfig` (gitignored). A key set there is compiled into the app bundle, so never share such a build.
+3. For the live pipeline, open **Settings → Meta Model API**, paste your key, and tap **Test connection**. The key is stored in the Keychain on the device only.
+  
 
 Check every endpoint from a Mac before demoing:
 
