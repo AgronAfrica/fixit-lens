@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "rewrites": [{ "source": "/j/:code", "destination": "/index.html" }],
+  "rewrites": [{ "source": "/j/:code", "destination": "/" }],
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "Permissions-Policy", "value": "microphone=(self)" }] }
   ]
