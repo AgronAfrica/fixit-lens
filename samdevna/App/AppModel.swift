@@ -19,7 +19,9 @@ final class AppModel: ObservableObject {
     @Published private(set) var hasKey = SecretStore.hasCloudKey
     /// Camera source for Lens, the guide and Fix it together: the iPhone or Ray-Ban Meta glasses (DAT SDK).
     @Published var cameraSource: CameraSource { didSet { defaults.set(cameraSource.rawValue, forKey: Keys.cameraSource); cameraSourceChanged() } }
-    /// Fix it together relay (Cloudflare Worker or `node together/relay/server.mjs`). No default: set it in Settings.
+    /// Fix it together relay (Cloudflare Worker or `node together/relay/server.mjs`).
+    /// Defaults to the deployed Worker; override in Settings (an empty value falls back to the default).
+    static let defaultRelayURL = "https://fixit-together.joinreson.workers.dev"
     @Published var relayURL: String { didSet { defaults.set(relayURL, forKey: Keys.relayURL) } }
     @Published var displayName: String { didSet { defaults.set(displayName, forKey: Keys.displayName) } }
 
@@ -100,7 +102,8 @@ final class AppModel: ObservableObject {
         speechRate = defaults.object(forKey: Keys.speechRate) as? Double ?? 0.5
         appearance = Appearance(rawValue: defaults.string(forKey: Keys.appearance) ?? "") ?? .system
         cameraSource = CameraSource(rawValue: defaults.string(forKey: Keys.cameraSource) ?? "") ?? .iPhone
-        relayURL = defaults.string(forKey: Keys.relayURL) ?? ""
+        let storedRelay = defaults.string(forKey: Keys.relayURL)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        relayURL = storedRelay.isEmpty ? Self.defaultRelayURL : storedRelay
         displayName = defaults.string(forKey: Keys.displayName) ?? ""
         // Re-publish nested observable changes (mic level, speaking state, call trace) to views observing the model.
         for publisher in [mic.objectWillChange.eraseToAnyPublisher(),

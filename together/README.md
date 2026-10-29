@@ -10,13 +10,19 @@ together/
   web/     Static helper client (index.html, app.js, lib.js, demo.js, style.css). vercel.json for Vercel hosting.
 ```
 
-## Deploy (free tiers)
+## Live deployment
+
+- Relay: `https://fixit-together.joinreson.workers.dev` (health: `/api/health`, WebSocket: `wss://fixit-together.joinreson.workers.dev/ws/CODE?role=fixer|helper`, join links: `/j/CODE`).
+- Web helper (Vercel): `https://fixit-lens-together.vercel.app` (`web/config.js` points `window.FIXIT_RELAY` at the relay).
+- The iOS app uses this relay by default; **Settings → Fix it together → Relay URL** overrides it.
+
+## Deploy your own (free tiers)
 
 You need a **Cloudflare account** (Workers free plan). Vercel is optional.
 
 1. `cd together/relay && npm install`
 2. `npx wrangler login` (opens the browser), then `npx wrangler deploy`. Wrangler prints the URL, e.g. `https://fixit-together.<you>.workers.dev`. That one Worker serves the relay **and** the web helper (`/j/CODE`).
-3. In the app: **Settings → Fix it together → Relay URL** = that URL.
+3. In the app: **Settings → Fix it together → Relay URL** = that URL (or change `AppModel.defaultRelayURL`).
 4. Optional, Vercel for the web helper: import `together/web` as a static project, set `window.FIXIT_RELAY` in `web/config.js` to the Worker URL, deploy. `vercel.json` rewrites `/j/:code` to the client.
 
 Local: `cd together/relay && npm start` (Node, port 8787, serves `../web` too). Phones on the same Wi-Fi can use `http://<your-mac-ip>:8787`.

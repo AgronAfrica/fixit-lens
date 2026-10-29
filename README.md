@@ -93,6 +93,7 @@ The earlier assistant features (crop and health guidance, the "teacher", and the
 
 Share a code or link and a friend helps live from the app or any browser. Their tap outlines the part on **both** screens with SAM 3.1; speech goes Muse Voice Transcribe → Muse Spark 1.3 (translation) → captions plus on-device speech, so a Spanish-speaking Fixer and an English-speaking Helper can work together. Muse Spark turns the session into a saved **repair memory** checklist. The safety stop applies inside sessions too.
 
+- **Live:** relay at [`https://fixit-together.joinreson.workers.dev`](https://fixit-together.joinreson.workers.dev/api/health) (Cloudflare Worker + Durable Object, `wss://…/ws/CODE`), web helper at [`https://fixit-lens-together.vercel.app`](https://fixit-lens-together.vercel.app). The app uses this relay by default (Settings can override it).
 - All Meta calls run on the Fixer's phone. The relay (Cloudflare Worker + Durable Object, free plan, or `node server.mjs`) only forwards frames and messages and never holds a key.
 - Live WebSocket with ack pacing; HTTP snapshot fallback (about 1 frame/s) when WebSockets are blocked.
 - Deploy and protocol details: [`together/README.md`](together/README.md). Two-device demo with a scripted helper: **Lens → Fix it together → Two-device demo**, or `together/web/index.html?demo=1&pov=1`.
